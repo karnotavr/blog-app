@@ -1,0 +1,323 @@
+html {
+    font-size: 17px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    color: #1b1b1b;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*    Header    */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s linear;
+}
+
+header a.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a:hover {
+    color: #4e4e4e;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+/*    Login    */
+
+form.login,
+form.register {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputs {
+    width: 100%;
+    margin-bottom: 20px;
+}
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #4e4e4e;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #1b1b1b;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 13px;
+    transition: all 0.2s linear;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #e8e8e8;
+    color: #1b1b1b;
+}
+
+form.login h2,
+form.register h2 {
+    text-align: center;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-form input,
+.post-form button,
+.quill {
+    width: 100%;
+}
+.post-form button {
+    width: 20%;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+.post .content {
+    justify-self: start;
+}
+
+.post .image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
+
+.post .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author {
+    font-weight: bold;
+    color: #4e4e4e;
+    margin-right: 20px;
+}
+
+.date {
+    color: #a1a1a1;
+}
+
+.post a {
+    text-decoration: none;
+    color: #1b1b1b;
+    transition: all 0.2s linear;
+}
+
+.post a:hover {
+    color: #4e4e4e;
+}
+
+.post a h3 {
+    font-size: 1.1rem;
+}
+
+.likes,
+.comments {
+    font-size: 1.1rem;
+}
+
+.likes-icon,
+.comments-icon {
+    font-size: 1.3rem;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.likes {
+    margin-right: 15px;
+}
+
+/* Single Post   */
+.post-info {
+    margin-bottom: 20px;
+}
+
+.post-info .flex-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.post-title {
+    margin-right: 20px;
+}
+
+.post-page .image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.post .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-sec {
+    margin-bottom: 50px;
+}
+
+.comment-sec {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.comment-sec span {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.form-comment {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #a1a1a1;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.form-comment textarea {
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.form-comment textarea:focus {
+    outline: none;
+}
+
+.comments-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 5px 10px 10px 0px;
+}
+
+.comments-btns button {
+    padding: 10px 12px;
+}
+
+.clear-btn {
+    background-color: #fff;
+    color: #1b1b1b;
+}
+
+.comment {
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    padding: 15px 15px;
+    margin-bottom: 20px;
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.comment-info .date {
+    font-size: 0.9rem;
+    align-self: left;
+    color: #aaa;
+}
+
+.comment-info .username {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.comment-text {
+    font-size: 1rem;
+}
+
+.post-controls {
+    margin-left: auto;
+}
+
+.edit-btn {
+    text-decoration: none;
+    color: #4e4e4e;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.delete-btn {
+    position: relative;
+    top: 3px;
+    background-color: #fff;
+    color: #1b1b1b !important;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.delete-btn:hover {
+    background-color: #fff;
+}
